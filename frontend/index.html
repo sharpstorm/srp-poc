@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POC SRP Login</title>
+  <script type="module" src="assets/main.js"></script>
+</head>
+<body>
+  <h1>Test SRP Login</h1>
+    Username: <input id="username" type="text" />
+    <br/>
+    <br/>
+    Password: <input id="password" type="text" />
+    <br/>
+    <br/>
+    <button id="login-btn" type="button">Login</button>
+    <div style="margin-top: 16px; border: 1px black solid; padding: 8px;">
+      <div>
+        <span>Auth Status: </span>
+        <span id="auth-status"></span>
+      </div>
+      <br/>
+      <div>
+        <span>Session ID: </span>
+        <span id="session-id"></span>
+      </div>
+      <br/>
+      <div>
+        <span>Session Secret: </span>
+        <span id="session-secret"></span>
+      </div>
+    </div>
+    <br/>
+    <div style="margin-top: 16px; border: 1px black solid; padding: 8px;">
+      <button id="whoami-btn" type="button">Who Am I</button>
+      <br/>
+      <br/>
+      <div>
+        <span>Server WhoAmI Proof: </span>
+        <span id="server-whoami-proof"></span>
+      </div>
+      <br/>
+      <div>
+        <span>Client WhoAmI Proof: </span>
+        <span id="client-whoami-proof"></span>
+      </div>
+    </div>
+</body>
+</html>
